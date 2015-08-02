@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>658F97F3-7836-44CC-9A96-437E9885D499</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Espresso Moments</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>340F44C643B7EAF77484943CD452F238E576C1A4</key>
 		<string>https://github.com/WilliamHoang/espresso_moments.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Espresso Moments/Espresso Moments.xcodeproj/project.xcworkspace</string>
+	<string>Espresso Moments/Espresso Moments.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>340F44C643B7EAF77484943CD452F238E576C1A4</key>

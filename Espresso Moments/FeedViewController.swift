@@ -12,7 +12,8 @@ import CoreData
 
 class FeedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet weak var CollectionView: UICollectionView!
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var feedArray: [AnyObject]=[]
     override func viewDidLoad() {
@@ -67,13 +68,10 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
             self.presentViewController(photoLibraryController, animated: true, completion: nil)
             
         }
-        else{
-            
-        }
         
     }
     //UIImagePickerControllerDelegate
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {  //access the image from the 'info'
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) { //access the image from the 'info'
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         let imageData = UIImageJPEGRepresentation(image,1.0)
@@ -93,7 +91,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         feedArray.append(feedItem)
         
         self.dismissViewControllerAnimated(true, completion: nil)
-        self.CollectionView.reloadData()  //small-CAP issue
+        self.collectionView.reloadData()  //small-CAP issue
     }
     
     //UICollectionViewDataSource
