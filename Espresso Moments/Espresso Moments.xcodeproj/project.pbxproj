@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5331B6D901800011171 /* FeedItem.swift */; };
+		3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */; };
+		3D4E958A1B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */; };
+		3D4E958F1B6D73A100FDEDDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4E958D1B6D73A100FDEDDB /* Main.storyboard */; };
+		3D4E95911B6D73A100FDEDDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4E95901B6D73A100FDEDDB /* Images.xcassets */; };
+		3D4E95941B6D73A100FDEDDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4E95921B6D73A100FDEDDB /* LaunchScreen.xib */; };
+		3D4E95A01B6D73A100FDEDDB /* Espresso_MomentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E959F1B6D73A100FDEDDB /* Espresso_MomentsTests.swift */; };
+		3D4E95AA1B6D767A00FDEDDB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95A91B6D767A00FDEDDB /* FeedViewController.swift */; };
+		3D4E95AC1B6D7D3B00FDEDDB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95AB1B6D7D3B00FDEDDB /* FeedCell.swift */; };
+		3D4E95AE1B6D7FC600FDEDDB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4E95AD1B6D7FC600FDEDDB /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D4E959A1B6D73A100FDEDDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D4E95791B6D73A100FDEDDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D4E95801B6D73A100FDEDDB;
+			remoteInfo = "Espresso Moments";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D4DE5331B6D901800011171 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		3D4E95811B6D73A100FDEDDB /* Espresso Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Espresso Moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4E95851B6D73A100FDEDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D4E95891B6D73A100FDEDDB /* Espresso_Moments.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Espresso_Moments.xcdatamodel; sourceTree = "<group>"; };
+		3D4E958E1B6D73A100FDEDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D4E95901B6D73A100FDEDDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D4E95931B6D73A100FDEDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3D4E95991B6D73A100FDEDDB /* Espresso MomentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Espresso MomentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4E959E1B6D73A100FDEDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4E959F1B6D73A100FDEDDB /* Espresso_MomentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Espresso_MomentsTests.swift; sourceTree = "<group>"; };
+		3D4E95A91B6D767A00FDEDDB /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
+		3D4E95AB1B6D7D3B00FDEDDB /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		3D4E95AD1B6D7FC600FDEDDB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D4E957E1B6D73A100FDEDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4E95AE1B6D7FC600FDEDDB /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D4E95961B6D73A100FDEDDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D4E95781B6D73A100FDEDDB = {
+			isa = PBXGroup;
+			children = (
+				3D4DE5331B6D901800011171 /* FeedItem.swift */,
+				3D4E95831B6D73A100FDEDDB /* Espresso Moments */,
+				3D4E959C1B6D73A100FDEDDB /* Espresso MomentsTests */,
+				3D4E95821B6D73A100FDEDDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D4E95821B6D73A100FDEDDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D4E95811B6D73A100FDEDDB /* Espresso Moments.app */,
+				3D4E95991B6D73A100FDEDDB /* Espresso MomentsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D4E95831B6D73A100FDEDDB /* Espresso Moments */ = {
+			isa = PBXGroup;
+			children = (
+				3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */,
+				3D4E95A91B6D767A00FDEDDB /* FeedViewController.swift */,
+				3D4E95AB1B6D7D3B00FDEDDB /* FeedCell.swift */,
+				3D4E958D1B6D73A100FDEDDB /* Main.storyboard */,
+				3D4E95901B6D73A100FDEDDB /* Images.xcassets */,
+				3D4E95921B6D73A100FDEDDB /* LaunchScreen.xib */,
+				3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */,
+				3D4E95841B6D73A100FDEDDB /* Supporting Files */,
+			);
+			path = "Espresso Moments";
+			sourceTree = "<group>";
+		};
+		3D4E95841B6D73A100FDEDDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D4E95AD1B6D7FC600FDEDDB /* MobileCoreServices.framework */,
+				3D4E95851B6D73A100FDEDDB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D4E959C1B6D73A100FDEDDB /* Espresso MomentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D4E959F1B6D73A100FDEDDB /* Espresso_MomentsTests.swift */,
+				3D4E959D1B6D73A100FDEDDB /* Supporting Files */,
+			);
+			path = "Espresso MomentsTests";
+			sourceTree = "<group>";
+		};
+		3D4E959D1B6D73A100FDEDDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D4E959E1B6D73A100FDEDDB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D4E95801B6D73A100FDEDDB /* Espresso Moments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D4E95A31B6D73A100FDEDDB /* Build configuration list for PBXNativeTarget "Espresso Moments" */;
+			buildPhases = (
+				3D4E957D1B6D73A100FDEDDB /* Sources */,
+				3D4E957E1B6D73A100FDEDDB /* Frameworks */,
+				3D4E957F1B6D73A100FDEDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Espresso Moments";
+			productName = "Espresso Moments";
+			productReference = 3D4E95811B6D73A100FDEDDB /* Espresso Moments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D4E95981B6D73A100FDEDDB /* Espresso MomentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D4E95A61B6D73A100FDEDDB /* Build configuration list for PBXNativeTarget "Espresso MomentsTests" */;
+			buildPhases = (
+				3D4E95951B6D73A100FDEDDB /* Sources */,
+				3D4E95961B6D73A100FDEDDB /* Frameworks */,
+				3D4E95971B6D73A100FDEDDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D4E959B1B6D73A100FDEDDB /* PBXTargetDependency */,
+			);
+			name = "Espresso MomentsTests";
+			productName = "Espresso MomentsTests";
+			productReference = 3D4E95991B6D73A100FDEDDB /* Espresso MomentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D4E95791B6D73A100FDEDDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Harvard;
+				TargetAttributes = {
+					3D4E95801B6D73A100FDEDDB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3D4E95981B6D73A100FDEDDB = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3D4E95801B6D73A100FDEDDB;
+					};
+				};
+			};
+			buildConfigurationList = 3D4E957C1B6D73A100FDEDDB /* Build configuration list for PBXProject "Espresso Moments" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D4E95781B6D73A100FDEDDB;
+			productRefGroup = 3D4E95821B6D73A100FDEDDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D4E95801B6D73A100FDEDDB /* Espresso Moments */,
+				3D4E95981B6D73A100FDEDDB /* Espresso MomentsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D4E957F1B6D73A100FDEDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4E958F1B6D73A100FDEDDB /* Main.storyboard in Resources */,
+				3D4E95941B6D73A100FDEDDB /* LaunchScreen.xib in Resources */,
+				3D4E95911B6D73A100FDEDDB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D4E95971B6D73A100FDEDDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D4E957D1B6D73A100FDEDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */,
+				3D4E95AC1B6D7D3B00FDEDDB /* FeedCell.swift in Sources */,
+				3D4E95AA1B6D767A00FDEDDB /* FeedViewController.swift in Sources */,
+				3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */,
+				3D4E958A1B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D4E95951B6D73A100FDEDDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4E95A01B6D73A100FDEDDB /* Espresso_MomentsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D4E959B1B6D73A100FDEDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D4E95801B6D73A100FDEDDB /* Espresso Moments */;
+			targetProxy = 3D4E959A1B6D73A100FDEDDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D4E958D1B6D73A100FDEDDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D4E958E1B6D73A100FDEDDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D4E95921B6D73A100FDEDDB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D4E95931B6D73A100FDEDDB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D4E95A11B6D73A100FDEDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D4E95A21B6D73A100FDEDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D4E95A41B6D73A100FDEDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Espresso Moments/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D4E95A51B6D73A100FDEDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Espresso Moments/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D4E95A71B6D73A100FDEDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Espresso MomentsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Espresso Moments.app/Espresso Moments";
+			};
+			name = Debug;
+		};
+		3D4E95A81B6D73A100FDEDDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Espresso MomentsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Espresso Moments.app/Espresso Moments";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D4E957C1B6D73A100FDEDDB /* Build configuration list for PBXProject "Espresso Moments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4E95A11B6D73A100FDEDDB /* Debug */,
+				3D4E95A21B6D73A100FDEDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D4E95A31B6D73A100FDEDDB /* Build configuration list for PBXNativeTarget "Espresso Moments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4E95A41B6D73A100FDEDDB /* Debug */,
+				3D4E95A51B6D73A100FDEDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D4E95A61B6D73A100FDEDDB /* Build configuration list for PBXNativeTarget "Espresso MomentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D4E95A71B6D73A100FDEDDB /* Debug */,
+				3D4E95A81B6D73A100FDEDDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D4E95891B6D73A100FDEDDB /* Espresso_Moments.xcdatamodel */,
+			);
+			currentVersion = 3D4E95891B6D73A100FDEDDB /* Espresso_Moments.xcdatamodel */;
+			path = Espresso_Moments.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D4E95791B6D73A100FDEDDB /* Project object */;
+}

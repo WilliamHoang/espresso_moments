@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:espresso_moments.xcodeproj">
+      location = "self:Espresso Moments.xcodeproj">
    </FileRef>
 </Workspace>

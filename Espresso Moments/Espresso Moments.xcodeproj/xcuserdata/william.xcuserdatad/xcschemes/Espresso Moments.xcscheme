@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DD91E6E1B6D267300F11D67"
-               BuildableName = "espresso_moments.app"
-               BlueprintName = "espresso_moments"
-               ReferencedContainer = "container:espresso_moments.xcodeproj">
+               BlueprintIdentifier = "3D4E95801B6D73A100FDEDDB"
+               BuildableName = "Espresso Moments.app"
+               BlueprintName = "Espresso Moments"
+               ReferencedContainer = "container:Espresso Moments.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DD91E861B6D267300F11D67"
-               BuildableName = "espresso_momentsTests.xctest"
-               BlueprintName = "espresso_momentsTests"
-               ReferencedContainer = "container:espresso_moments.xcodeproj">
+               BlueprintIdentifier = "3D4E95981B6D73A100FDEDDB"
+               BuildableName = "Espresso MomentsTests.xctest"
+               BlueprintName = "Espresso MomentsTests"
+               ReferencedContainer = "container:Espresso Moments.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DD91E861B6D267300F11D67"
-               BuildableName = "espresso_momentsTests.xctest"
-               BlueprintName = "espresso_momentsTests"
-               ReferencedContainer = "container:espresso_moments.xcodeproj">
+               BlueprintIdentifier = "3D4E95981B6D73A100FDEDDB"
+               BuildableName = "Espresso MomentsTests.xctest"
+               BlueprintName = "Espresso MomentsTests"
+               ReferencedContainer = "container:Espresso Moments.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DD91E6E1B6D267300F11D67"
-            BuildableName = "espresso_moments.app"
-            BlueprintName = "espresso_moments"
-            ReferencedContainer = "container:espresso_moments.xcodeproj">
+            BlueprintIdentifier = "3D4E95801B6D73A100FDEDDB"
+            BuildableName = "Espresso Moments.app"
+            BlueprintName = "Espresso Moments"
+            ReferencedContainer = "container:Espresso Moments.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DD91E6E1B6D267300F11D67"
-            BuildableName = "espresso_moments.app"
-            BlueprintName = "espresso_moments"
-            ReferencedContainer = "container:espresso_moments.xcodeproj">
+            BlueprintIdentifier = "3D4E95801B6D73A100FDEDDB"
+            BuildableName = "Espresso Moments.app"
+            BlueprintName = "Espresso Moments"
+            ReferencedContainer = "container:Espresso Moments.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DD91E6E1B6D267300F11D67"
-            BuildableName = "espresso_moments.app"
-            BlueprintName = "espresso_moments"
-            ReferencedContainer = "container:espresso_moments.xcodeproj">
+            BlueprintIdentifier = "3D4E95801B6D73A100FDEDDB"
+            BuildableName = "Espresso Moments.app"
+            BlueprintName = "Espresso Moments"
+            ReferencedContainer = "container:Espresso Moments.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,6 +1,6 @@
 //
-//  espresso_momentsTests.swift
-//  espresso_momentsTests
+//  Espresso_MomentsTests.swift
+//  Espresso MomentsTests
 //
 //  Created by WiLL on 8/1/15.
 //  Copyright (c) 2015 Harvard. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class espresso_momentsTests: XCTestCase {
+class Espresso_MomentsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
