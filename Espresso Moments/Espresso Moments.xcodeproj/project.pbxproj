@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5331B6D901800011171 /* FeedItem.swift */; };
+		3D4DE5391B6E9BE700011171 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */; };
 		3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */; };
 		3D4E958A1B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */; };
 		3D4E958F1B6D73A100FDEDDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4E958D1B6D73A100FDEDDB /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		3D4DE5331B6D901800011171 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Espresso Moments-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3D4E95811B6D73A100FDEDDB /* Espresso Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Espresso Moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4E95851B6D73A100FDEDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */,
 				3D4E95A91B6D767A00FDEDDB /* FeedViewController.swift */,
 				3D4E95AB1B6D7D3B00FDEDDB /* FeedCell.swift */,
+				3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */,
 				3D4E958D1B6D73A100FDEDDB /* Main.storyboard */,
 				3D4E95901B6D73A100FDEDDB /* Images.xcassets */,
 				3D4E95921B6D73A100FDEDDB /* LaunchScreen.xib */,
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4DE5391B6E9BE700011171 /* ProfileViewController.swift in Sources */,
 				3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */,
 				3D4E95AC1B6D7D3B00FDEDDB /* FeedCell.swift in Sources */,
 				3D4E95AA1B6D767A00FDEDDB /* FeedViewController.swift in Sources */,

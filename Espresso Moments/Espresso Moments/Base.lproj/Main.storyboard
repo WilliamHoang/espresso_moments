@@ -78,6 +78,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2rK-e6-LRs">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="QR4-Vv-vHG"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="YR1-cC-cED">
                             <connections>
                                 <action selector="snapBarButtonItemTapped:" destination="vXZ-lx-hvc" id="qIg-rP-k5E"/>
@@ -86,11 +87,30 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="2GC-nS-70n" id="IBf-xP-IFr"/>
+                        <segue destination="slt-fe-5BT" kind="show" identifier="profileSegue" id="RKf-1q-dfx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="375"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="iWX-ke-1Jm">
+            <objects>
+                <viewController id="slt-fe-5BT" customClass="ProfileViewController" customModule="Espresso_Moments" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n01-U5-pgX"/>
+                        <viewControllerLayoutGuide type="bottom" id="xvE-kf-exG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="waw-0r-cKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIW-hs-JEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rk1-Uq-4e4">
