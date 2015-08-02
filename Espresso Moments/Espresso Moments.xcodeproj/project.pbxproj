@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		3D4DE5331B6D901800011171 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
-		3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Espresso Moments-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Espresso Moments-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3D4E95811B6D73A100FDEDDB /* Espresso Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Espresso Moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4E95851B6D73A100FDEDDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 				3D4E95821B6D73A100FDEDDB /* Products */,
 				1AD31221F43BB3744293EAC5 /* Pods */,
 				C64D9FD55C2B8D97F26AA1DC /* Frameworks */,
-				3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +115,7 @@
 				3D4E95921B6D73A100FDEDDB /* LaunchScreen.xib */,
 				3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */,
 				3D4E95841B6D73A100FDEDDB /* Supporting Files */,
+				3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */,
 			);
 			path = "Espresso Moments";
 			sourceTree = "<group>";

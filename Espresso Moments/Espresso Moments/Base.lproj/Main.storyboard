@@ -78,7 +78,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2rK-e6-LRs">
-                        <barButtonItem key="leftBarButtonItem" title="Profile" id="QR4-Vv-vHG"/>
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="QR4-Vv-vHG">
+                            <connections>
+                                <action selector="profileTapped:" destination="vXZ-lx-hvc" id="Mos-vd-Ohd"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="YR1-cC-cED">
                             <connections>
                                 <action selector="snapBarButtonItemTapped:" destination="vXZ-lx-hvc" id="qIg-rP-k5E"/>
@@ -106,19 +110,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FNk-Ei-LWb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FNk-Ei-LWb">
                                 <rect key="frame" x="10" y="80" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="D6S-zQ-c7P"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-GC-IrA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-GC-IrA">
                                 <rect key="frame" x="118" y="102" width="211" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="8YZ-iX-deT"/>
+                                    <constraint firstAttribute="height" constant="38" id="MI7-bu-fXL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsX-Zx-9Pt" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="73" y="458" width="240" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="toT-C4-KmV" customClass="FBSDKProfilePictureView">
+                                <rect key="frame" x="73" y="210" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FNk-Ei-LWb" firstAttribute="leading" secondItem="waw-0r-cKQ" secondAttribute="leadingMargin" constant="-6" id="00i-jB-zeT"/>
+                            <constraint firstItem="Kav-GC-IrA" firstAttribute="top" secondItem="n01-U5-pgX" secondAttribute="bottom" constant="38" id="Y4F-tz-Wrb"/>
+                            <constraint firstItem="FNk-Ei-LWb" firstAttribute="top" secondItem="n01-U5-pgX" secondAttribute="bottom" constant="16" id="YrC-cQ-AUy"/>
+                            <constraint firstItem="Kav-GC-IrA" firstAttribute="leading" secondItem="FNk-Ei-LWb" secondAttribute="trailing" constant="8" symbolic="YES" id="vlv-8T-xOh"/>
+                            <constraint firstItem="xvE-kf-exG" firstAttribute="top" secondItem="FNk-Ei-LWb" secondAttribute="bottom" constant="420" id="xGj-o4-abn"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="fbLoginView" destination="rsX-Zx-9Pt" id="dFn-YH-KE6"/>
+                        <outlet property="fbProfileView" destination="toT-C4-KmV" id="BnN-Nz-D6n"/>
                         <outlet property="nameLabel" destination="Kav-GC-IrA" id="wKp-13-1d0"/>
                         <outlet property="profileImageView" destination="FNk-Ei-LWb" id="5bw-tV-g52"/>
                     </connections>
@@ -144,6 +172,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dt1-vK-oN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tIA-xG-jbH">
+            <objects>
+                <viewController id="8pA-hX-zZK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mkK-sf-Lfo"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Le-3c-Cd2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="INs-mG-9gp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wv3-IQ-4o7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
