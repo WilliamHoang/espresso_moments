@@ -8,8 +8,7 @@
 
 import UIKit
 
-
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -24,6 +23,9 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //self.loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult: true, error: nil)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,16 +33,30 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {  
         super.viewWillAppear(animated)
         
         if let accessToken = FBSDKAccessToken.currentAccessToken() {
             // user is logged in
             println("User's ID is \(accessToken.userID)")
             println("permissions: \(accessToken.permissions)")
+            
+            //unhide UI elements
+            profileImageView.hidden = false
+            nameLabel.hidden = false
+            
+            //obtain user data
             getFBUserData()
         } else {
             // user is not logged in
+            //println("not logged in")
+            
+            //hide UI elements - default is hidden
+            profileImageView.hidden = true
+            nameLabel.hidden = true
+            
+            self.loginButtonDidLogOut(fbLoginView)
+            
         }
     }
     
@@ -55,6 +71,31 @@ class ProfileViewController: UIViewController {
                 println("fetched result: \(result)")
             }
         })
+    }
+    
+    //implement FB Delegate method
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        println("User Logged In")
+        
+        if ((error) != nil)
+        {
+            // Process error
+        }
+        else if result.isCancelled {
+            // Handle cancellations
+        }
+        else {
+            // If you ask for multiple permissions at once, you
+            // should check if specific permissions missing
+            if result.grantedPermissions.contains("email")
+            {
+                // Do work
+            }
+        }
+    }
+    
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        println("User Logged Out")
     }
     
 
