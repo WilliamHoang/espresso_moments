@@ -33,7 +33,7 @@ class ProfileViewController: UIViewController, FBSDKLoginButtonDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {  
+    override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         if let accessToken = FBSDKAccessToken.currentAccessToken() {

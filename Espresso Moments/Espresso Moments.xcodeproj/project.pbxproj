@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4BBEBC1B6F1A0C00EEEA33 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BBEBA1B6F1A0C00EEEA33 /* CouchbaseLite.framework */; };
+		3D4BBEBD1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BBEBB1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework */; };
 		3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5331B6D901800011171 /* FeedItem.swift */; };
 		3D4DE5391B6E9BE700011171 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */; };
 		3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D4BBEBA1B6F1A0C00EEEA33 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		3D4BBEBB1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLiteListener.framework; sourceTree = "<group>"; };
 		3D4DE5331B6D901800011171 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Espresso Moments-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4BBEBD1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework in Frameworks */,
 				3D4E95AE1B6D7FC600FDEDDB /* MobileCoreServices.framework in Frameworks */,
+				3D4BBEBC1B6F1A0C00EEEA33 /* CouchbaseLite.framework in Frameworks */,
 				F3621B2ADFBBBF7BFB8D2314 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +155,8 @@
 		C64D9FD55C2B8D97F26AA1DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D4BBEBA1B6F1A0C00EEEA33 /* CouchbaseLite.framework */,
+				3D4BBEBB1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework */,
 				C06E9E4E9FD9957D7E48DC3A /* libPods.a */,
 			);
 			name = Frameworks;
@@ -423,6 +431,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Espresso Moments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,6 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Espresso Moments/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
