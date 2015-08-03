@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D4BBEBC1B6F1A0C00EEEA33 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BBEBA1B6F1A0C00EEEA33 /* CouchbaseLite.framework */; };
 		3D4BBEBD1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BBEBB1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework */; };
+		3D4BBEBF1B6F1DD300EEEA33 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEBE1B6F1DD300EEEA33 /* DatabaseUtil.swift */; };
 		3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5331B6D901800011171 /* FeedItem.swift */; };
 		3D4DE5391B6E9BE700011171 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */; };
 		3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		3D4BBEBA1B6F1A0C00EEEA33 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 		3D4BBEBB1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLiteListener.framework; sourceTree = "<group>"; };
+		3D4BBEBE1B6F1DD300EEEA33 /* DatabaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseUtil.swift; path = ../DatabaseUtil.swift; sourceTree = "<group>"; };
 		3D4DE5331B6D901800011171 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Espresso Moments-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				3D4E95AB1B6D7D3B00FDEDDB /* FeedCell.swift */,
 				3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */,
 				3D4E958D1B6D73A100FDEDDB /* Main.storyboard */,
+				3D4BBEBE1B6F1DD300EEEA33 /* DatabaseUtil.swift */,
 				3D4E95901B6D73A100FDEDDB /* Images.xcassets */,
 				3D4E95921B6D73A100FDEDDB /* LaunchScreen.xib */,
 				3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */,
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4BBEBF1B6F1DD300EEEA33 /* DatabaseUtil.swift in Sources */,
 				3D4DE5391B6E9BE700011171 /* ProfileViewController.swift in Sources */,
 				3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */,
 				3D4E95AC1B6D7D3B00FDEDDB /* FeedCell.swift in Sources */,
