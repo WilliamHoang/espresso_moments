@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D4BBEC31B6F202600EEEA33 /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEC21B6F202600EEEA33 /* UIImage+QRCode.swift */; };
 		3D4BBEC51B6F208300EEEA33 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEC41B6F208300EEEA33 /* DatabaseUtil.swift */; };
+		3D4BBEC91B6FD06B00EEEA33 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEC81B6FD06B00EEEA33 /* FilterViewController.swift */; };
 		3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5331B6D901800011171 /* FeedItem.swift */; };
 		3D4DE5391B6E9BE700011171 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */; };
 		3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		3D4BBEC21B6F202600EEEA33 /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+QRCode.swift"; path = "../UIImage+QRCode.swift"; sourceTree = "<group>"; };
 		3D4BBEC41B6F208300EEEA33 /* DatabaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseUtil.swift; path = ../DatabaseUtil.swift; sourceTree = "<group>"; };
+		3D4BBEC81B6FD06B00EEEA33 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		3D4DE5331B6D901800011171 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Espresso Moments-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */,
 				3D4E95A91B6D767A00FDEDDB /* FeedViewController.swift */,
+				3D4BBEC81B6FD06B00EEEA33 /* FilterViewController.swift */,
 				3D4E95AB1B6D7D3B00FDEDDB /* FeedCell.swift */,
 				3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */,
 				3D4E958D1B6D73A100FDEDDB /* Main.storyboard */,
@@ -298,6 +301,7 @@
 				3D4BBEC51B6F208300EEEA33 /* DatabaseUtil.swift in Sources */,
 				3D4BBEC31B6F202600EEEA33 /* UIImage+QRCode.swift in Sources */,
 				3D4DE5391B6E9BE700011171 /* ProfileViewController.swift in Sources */,
+				3D4BBEC91B6FD06B00EEEA33 /* FilterViewController.swift in Sources */,
 				3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */,
 				3D4E95AC1B6D7D3B00FDEDDB /* FeedCell.swift in Sources */,
 				3D4E95AA1B6D767A00FDEDDB /* FeedViewController.swift in Sources */,
