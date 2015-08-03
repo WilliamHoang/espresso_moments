@@ -1,4 +1,4 @@
-//
+    //
 //  ProfileViewController.swift
 //  Espresso Moments
 //
@@ -38,6 +38,8 @@ class ProfileViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         if let accessToken = FBSDKAccessToken.currentAccessToken() {
             // user is logged in
+            let accessHash = FBSDKAccessToken.currentAccessToken()
+            println("\(accessHash)")
             println("User's ID is \(accessToken.userID)")
             println("permissions: \(accessToken.permissions)")
             
@@ -69,6 +71,22 @@ class ProfileViewController: UIViewController, FBSDKLoginButtonDelegate {
                 println("Error: \(error)")
             } else {
                 println("fetched result: \(result)")
+                
+                //imageURL
+                let userImageURL = "https://graph.facebook.com/\(FBSDKAccessToken.currentAccessToken().userID)/picture?type=small"
+                let url = NSURL(string: userImageURL)
+                let imageData = NSData(contentsOfURL: url!)
+                let image = UIImage(data: imageData!)
+                self.profileImageView.image = image!
+                
+                //Populate Label with user name
+                //self.nameLabel.text = "Welcome William"
+                
+                //let facebookName = FBSDKProfile().firstName!
+                
+                self.nameLabel.text = "Welcome \(FBSDKProfile().firstName)"
+                
+
             }
         })
     }
@@ -97,7 +115,6 @@ class ProfileViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         println("User Logged Out")
     }
-    
 
     /*
     // MARK: - Navigation

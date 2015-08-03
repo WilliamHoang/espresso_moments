@@ -19,5 +19,53 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Espresso Moments/ProfileViewController.swift"
+            timestampString = "460306216.136822"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "getFBUserData()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Espresso_Moments.ProfileViewController.(getFBUserData (Espresso_Moments.ProfileViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "Espresso Moments"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/william/Development/pixi_labs/espresso_moments/Espresso%20Moments/Espresso%20Moments/ProfileViewController.swift"
+                  timestampString = "460305731.34474"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "2144">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Espresso_Moments.ProfileViewController.(getFBUserData (Espresso_Moments.ProfileViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "Espresso Moments"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/william/Development/pixi_labs/espresso_moments/Espresso%20Moments/Espresso%20Moments/ProfileViewController.swift"
+                  timestampString = "460305731.344917"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "2172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

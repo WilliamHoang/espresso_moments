@@ -113,7 +113,8 @@
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FNk-Ei-LWb">
                                 <rect key="frame" x="10" y="80" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="D6S-zQ-c7P"/>
+                                    <constraint firstAttribute="width" constant="100" id="GSX-8Z-Jz5"/>
+                                    <constraint firstAttribute="height" constant="100" id="gbA-Ka-vvU"/>
                                 </constraints>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-GC-IrA">
@@ -130,18 +131,18 @@
                                 <rect key="frame" x="73" y="458" width="240" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="toT-C4-KmV" customClass="FBSDKProfilePictureView">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="toT-C4-KmV" customClass="FBSDKProfilePictureView">
                                 <rect key="frame" x="73" y="210" width="240" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FNk-Ei-LWb" firstAttribute="leading" secondItem="waw-0r-cKQ" secondAttribute="leadingMargin" constant="-6" id="00i-jB-zeT"/>
+                            <constraint firstItem="FNk-Ei-LWb" firstAttribute="top" secondItem="n01-U5-pgX" secondAttribute="bottom" constant="16" id="7g7-y6-uMS"/>
+                            <constraint firstItem="toT-C4-KmV" firstAttribute="top" secondItem="FNk-Ei-LWb" secondAttribute="bottom" constant="30" id="GNm-qk-sTX"/>
+                            <constraint firstItem="Kav-GC-IrA" firstAttribute="leading" secondItem="FNk-Ei-LWb" secondAttribute="trailing" constant="8" symbolic="YES" id="LYd-3i-rM9"/>
                             <constraint firstItem="Kav-GC-IrA" firstAttribute="top" secondItem="n01-U5-pgX" secondAttribute="bottom" constant="38" id="Y4F-tz-Wrb"/>
-                            <constraint firstItem="FNk-Ei-LWb" firstAttribute="top" secondItem="n01-U5-pgX" secondAttribute="bottom" constant="16" id="YrC-cQ-AUy"/>
-                            <constraint firstItem="Kav-GC-IrA" firstAttribute="leading" secondItem="FNk-Ei-LWb" secondAttribute="trailing" constant="8" symbolic="YES" id="vlv-8T-xOh"/>
-                            <constraint firstItem="xvE-kf-exG" firstAttribute="top" secondItem="FNk-Ei-LWb" secondAttribute="bottom" constant="420" id="xGj-o4-abn"/>
+                            <constraint firstItem="FNk-Ei-LWb" firstAttribute="leading" secondItem="waw-0r-cKQ" secondAttribute="leadingMargin" constant="-6" id="nbs-EV-z3i"/>
                         </constraints>
                     </view>
                     <connections>
