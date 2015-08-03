@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -112,6 +113,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
+    }
+
+    // MARK: - P2P Message
+    
+    class func showMessage(message: String, title: String) {
+        UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: "OK").show()
     }
 
 }
