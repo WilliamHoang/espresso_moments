@@ -5,5 +5,5 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-#import <CouchbaseLite/CouchbaseLite.h>
-#import <CouchbaseLiteListener/CBLListener.h>
+//#import <CouchbaseLite/CouchbaseLite.h>
+//#import <CouchbaseLiteListener/CBLListener.h>

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D4BBEBC1B6F1A0C00EEEA33 /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BBEBA1B6F1A0C00EEEA33 /* CouchbaseLite.framework */; };
-		3D4BBEBD1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4BBEBB1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework */; };
 		3D4BBEC31B6F202600EEEA33 /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEC21B6F202600EEEA33 /* UIImage+QRCode.swift */; };
 		3D4BBEC51B6F208300EEEA33 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEC41B6F208300EEEA33 /* DatabaseUtil.swift */; };
 		3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5331B6D901800011171 /* FeedItem.swift */; };
@@ -36,8 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D4BBEBA1B6F1A0C00EEEA33 /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
-		3D4BBEBB1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLiteListener.framework; sourceTree = "<group>"; };
 		3D4BBEC21B6F202600EEEA33 /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+QRCode.swift"; path = "../UIImage+QRCode.swift"; sourceTree = "<group>"; };
 		3D4BBEC41B6F208300EEEA33 /* DatabaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseUtil.swift; path = ../DatabaseUtil.swift; sourceTree = "<group>"; };
 		3D4DE5331B6D901800011171 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
@@ -66,9 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D4BBEBD1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework in Frameworks */,
 				3D4E95AE1B6D7FC600FDEDDB /* MobileCoreServices.framework in Frameworks */,
-				3D4BBEBC1B6F1A0C00EEEA33 /* CouchbaseLite.framework in Frameworks */,
 				F3621B2ADFBBBF7BFB8D2314 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,8 +155,6 @@
 		C64D9FD55C2B8D97F26AA1DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3D4BBEBA1B6F1A0C00EEEA33 /* CouchbaseLite.framework */,
-				3D4BBEBB1B6F1A0C00EEEA33 /* CouchbaseLiteListener.framework */,
 				C06E9E4E9FD9957D7E48DC3A /* libPods.a */,
 			);
 			name = Frameworks;

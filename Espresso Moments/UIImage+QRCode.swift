@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIImage {
-    
+    /*
     class func qrCodeImageForString(string: String!, size: CGSize) -> UIImage? {
         // Create QR Code Image
         let filter = CIFilter(name: "CIQRCodeGenerator")
@@ -34,5 +34,6 @@ extension UIImage {
             orientation: UIImageOrientation.DownMirrored)
         return result
     }
+*/
     
 }
