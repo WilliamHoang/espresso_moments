@@ -27,6 +27,9 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        collectionView.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(collectionView)
+        
     }
 
     override func didReceiveMemoryWarning() {
