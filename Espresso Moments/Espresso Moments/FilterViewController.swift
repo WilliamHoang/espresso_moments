@@ -59,7 +59,13 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     func photoFilters() -> [CIFilter] {
         //Create CIFilter instances
         
-        let blur = CIFilter(name: "CIGaussianBlur") 
+        let blur = CIFilter(name:  "CIGaussianBlur")
+        let instant = CIFilter(name:  "CIPhotoEffectInstant")
+        let noir = CIFilter(name:  "CIPhotoEffectNoir")
+        let tone = CIFilter(name:  "CIToneCurve")
+        let transfer = CIFilter(name: "CIPhotoEffectTransfer")
+        let unsharpen = CIFilter(name: "CIUnsharpMask")
+        let monochrome = CIFilter(name: "CIColorMonochrome")
         
         return []
     }
