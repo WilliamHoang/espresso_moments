@@ -41,7 +41,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         // Dispose of any resources that can be recreated.
     }
     
-    //require functions for protocol
+    //UICollectionViewDataSource - required functions to implement for protocol
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
@@ -53,6 +53,15 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         cell.imageView.image = UIImage(named: "Placeholder")
         
         return cell
+    }
+    
+    //CIFilter - helper functions
+    func photoFilters() -> [CIFilter] {
+        //Create CIFilter instances
+        
+        let blur = CIFilter(name: "CIGaussianBlur") 
+        
+        return []
     }
 
 }
