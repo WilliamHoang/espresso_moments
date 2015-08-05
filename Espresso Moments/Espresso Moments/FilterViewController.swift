@@ -16,6 +16,8 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     let kIntensity = 0.7
     var context: CIContext = CIContext(options: nil)
     var filters: [CIFilter] = []
+    let placeHolderImage = UIImage(named: "Placeholder")
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,22 +58,27 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         let cell: FilterCell = collectionView.dequeueReusableCellWithReuseIdentifier("MyCell", forIndexPath: indexPath) as! FilterCell
         
-        cell.imageView.image = UIImage(named: "Placeholder")
-        
-        //create queue
-        //cell.imageView.image = filteredImageFromImage(thisFeedItem.image, filter: filters[indexPath.row])
-        let filterQueue: dispatch_queue_t = dispatch_queue_create("filter queue", nil)
-        
-        
-        //tell queue what code to run
-        dispatch_async(filterQueue, { () -> Void in
-            let filterImage = self.filteredImageFromImage(self.thisFeedItem.image, filter: self.filters[indexPath.row])
+        if cell.imageView.image == nil {  //create the placeholder only if it does not exist
             
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                cell.imageView.image = filterImage
+            
+            //cell.imageView.image = UIImage(named: "Placeholder")
+            cell.imageView.image = placeHolderImage
+            
+            //create queue
+            //cell.imageView.image = filteredImageFromImage(thisFeedItem.image, filter: filters[indexPath.row])
+            let filterQueue: dispatch_queue_t = dispatch_queue_create("filter queue", nil)
+            
+            
+            //tell queue what code to run
+            dispatch_async(filterQueue, { () -> Void in
+                let filterImage = self.filteredImageFromImage(self.thisFeedItem.thumbNail, filter: self.filters[indexPath.row])
+                
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    cell.imageView.image = filterImage
+                })
             })
-        })
-        
+            
+        }
         /*
         //issue below
         cell.imageView.image = filteredImageFromImage(thisFeedItem.image, filter: filters[indexPath.row]) as? UIImage
