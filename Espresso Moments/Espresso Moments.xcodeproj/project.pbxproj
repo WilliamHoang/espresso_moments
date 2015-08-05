@@ -10,7 +10,6 @@
 		3D4BBEC31B6F202600EEEA33 /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEC21B6F202600EEEA33 /* UIImage+QRCode.swift */; };
 		3D4BBEC51B6F208300EEEA33 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEC41B6F208300EEEA33 /* DatabaseUtil.swift */; };
 		3D4BBEC91B6FD06B00EEEA33 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BBEC81B6FD06B00EEEA33 /* FilterViewController.swift */; };
-		3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5331B6D901800011171 /* FeedItem.swift */; };
 		3D4DE5391B6E9BE700011171 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */; };
 		3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */; };
 		3D4E958A1B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */; };
@@ -21,6 +20,7 @@
 		3D4E95AA1B6D767A00FDEDDB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95A91B6D767A00FDEDDB /* FeedViewController.swift */; };
 		3D4E95AC1B6D7D3B00FDEDDB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E95AB1B6D7D3B00FDEDDB /* FeedCell.swift */; };
 		3D4E95AE1B6D7FC600FDEDDB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D4E95AD1B6D7FC600FDEDDB /* MobileCoreServices.framework */; };
+		3D52A7541B726A79003C8F6F /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D52A7531B726A79003C8F6F /* FeedItem.swift */; };
 		3D57A4221B703B9E00AA7287 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D57A4211B703B9E00AA7287 /* FilterCell.swift */; };
 		F3621B2ADFBBBF7BFB8D2314 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C06E9E4E9FD9957D7E48DC3A /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -39,7 +39,6 @@
 		3D4BBEC21B6F202600EEEA33 /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+QRCode.swift"; path = "../UIImage+QRCode.swift"; sourceTree = "<group>"; };
 		3D4BBEC41B6F208300EEEA33 /* DatabaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseUtil.swift; path = ../DatabaseUtil.swift; sourceTree = "<group>"; };
 		3D4BBEC81B6FD06B00EEEA33 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
-		3D4DE5331B6D901800011171 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Espresso Moments-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		3D4DE5381B6E9BE700011171 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3D4E95811B6D73A100FDEDDB /* Espresso Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Espresso Moments.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +54,7 @@
 		3D4E95A91B6D767A00FDEDDB /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
 		3D4E95AB1B6D7D3B00FDEDDB /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		3D4E95AD1B6D7FC600FDEDDB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3D52A7531B726A79003C8F6F /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		3D57A4211B703B9E00AA7287 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterCell.swift; path = ../FilterCell.swift; sourceTree = "<group>"; };
 		648CB5E3A525F99D51014D03 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		760FA989677E7916B6E91574 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +93,6 @@
 		3D4E95781B6D73A100FDEDDB = {
 			isa = PBXGroup;
 			children = (
-				3D4DE5331B6D901800011171 /* FeedItem.swift */,
 				3D4E95831B6D73A100FDEDDB /* Espresso Moments */,
 				3D4E959C1B6D73A100FDEDDB /* Espresso MomentsTests */,
 				3D4E95821B6D73A100FDEDDB /* Products */,
@@ -114,6 +113,7 @@
 		3D4E95831B6D73A100FDEDDB /* Espresso Moments */ = {
 			isa = PBXGroup;
 			children = (
+				3D52A7551B726ADF003C8F6F /* Model */,
 				3D57A4211B703B9E00AA7287 /* FilterCell.swift */,
 				3D4E95861B6D73A100FDEDDB /* AppDelegate.swift */,
 				3D4E95A91B6D767A00FDEDDB /* FeedViewController.swift */,
@@ -125,7 +125,6 @@
 				3D4BBEC41B6F208300EEEA33 /* DatabaseUtil.swift */,
 				3D4E95901B6D73A100FDEDDB /* Images.xcassets */,
 				3D4E95921B6D73A100FDEDDB /* LaunchScreen.xib */,
-				3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */,
 				3D4E95841B6D73A100FDEDDB /* Supporting Files */,
 				3D4DE5351B6E941F00011171 /* Espresso Moments-Bridging-Header.h */,
 			);
@@ -156,6 +155,16 @@
 				3D4E959E1B6D73A100FDEDDB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D52A7551B726ADF003C8F6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D4E95881B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld */,
+				3D52A7531B726A79003C8F6F /* FeedItem.swift */,
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C64D9FD55C2B8D97F26AA1DC /* Frameworks */ = {
@@ -308,8 +317,8 @@
 				3D4E95871B6D73A100FDEDDB /* AppDelegate.swift in Sources */,
 				3D4E95AC1B6D7D3B00FDEDDB /* FeedCell.swift in Sources */,
 				3D4E95AA1B6D767A00FDEDDB /* FeedViewController.swift in Sources */,
-				3D4DE5341B6D901800011171 /* FeedItem.swift in Sources */,
 				3D4E958A1B6D73A100FDEDDB /* Espresso_Moments.xcdatamodeld in Sources */,
+				3D52A7541B726A79003C8F6F /* FeedItem.swift in Sources */,
 				3D57A4221B703B9E00AA7287 /* FilterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +550,8 @@
 				3D4E95891B6D73A100FDEDDB /* Espresso_Moments.xcdatamodel */,
 			);
 			currentVersion = 3D4E95891B6D73A100FDEDDB /* Espresso_Moments.xcdatamodel */;
-			path = Espresso_Moments.xcdatamodeld;
+			name = Espresso_Moments.xcdatamodeld;
+			path = "Espresso Moments/Espresso_Moments.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
