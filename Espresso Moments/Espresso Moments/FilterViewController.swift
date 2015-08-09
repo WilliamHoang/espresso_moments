@@ -10,7 +10,7 @@ import UIKit
 
 class FilterViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
     
-    var thisFeedItem: FeedItem!
+    var thisFeedItem: FeedItem?
     var collectionView: UICollectionView!
     
     let kIntensity = 0.7
@@ -18,7 +18,6 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     var filters: [CIFilter] = []
     let placeHolderImage = UIImage(named: "Placeholder")
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,7 +59,6 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         if cell.imageView.image == nil {  //create the placeholder only if it does not exist
             
-            
             //cell.imageView.image = UIImage(named: "Placeholder")
             cell.imageView.image = placeHolderImage
             
@@ -71,11 +69,14 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             //tell queue what code to run
             dispatch_async(filterQueue, { () -> Void in
-                let filterImage = self.filteredImageFromImage(self.thisFeedItem.thumbNail, filter: self.filters[indexPath.row])
+                //if self.thisFeedItem != nil {
+                    let filterImage = self.filteredImageFromImage(self.thisFeedItem!.thumbNail, filter: self.filters[indexPath.row])
+                    
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        cell.imageView.image = filterImage
+                    })
+                //}
                 
-                dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                    cell.imageView.image = filterImage
-                })
             })
             
         }
@@ -169,13 +170,15 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         //each one of the CI Filters tell you which attributes you can change
         //add each one of our elements into our array here
         
-        return [blur, instant, noire, transfer, unsharpen, monochrome, colorControls, sepia, colorClamp, composite, vignette] //need a helper function to use the returned array
+        let availableFilters: [CIFilter] = [blur, instant, noire, transfer, unsharpen, monochrome, colorControls, sepia, colorClamp, composite, vignette]
+        
+        return availableFilters
+        //[blur, instant, noire, transfer, unsharpen, monochrome, colorControls, sepia, colorClamp, composite, vignette] //need a helper function to use the returned array
     }
     
     func filteredImageFromImage (imageData: NSData, filter: CIFilter) -> UIImage {
         let unfilteredImage = CIImage(data: imageData)
         filter.setValue(unfilteredImage, forKey: kCIInputImageKey)
-        
         
         //Create new image with filter
         let filteredImage:CIImage = filter.outputImage
@@ -185,10 +188,10 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         let cgImage: CGImageRef = context.createCGImage(filteredImage, fromRect: extent)
         
-        let finalImage = UIImage(CGImage: cgImage, scale: 1.0, orientation: UIImageOrientation.Up   )
+        let finalImage = UIImage(CGImage: cgImage, scale: 1.0, orientation: UIImageOrientation.Up)!
         //let finalImage = UIImage(CIImage: filteredImage)!
         
-        return finalImage!
+        return finalImage
     }
 
 }
